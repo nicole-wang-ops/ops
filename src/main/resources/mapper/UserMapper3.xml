@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!--动态SQL-->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo12.mapper.UserMapper3">
+    <resultMap id="UserMap" type="com.example.demo12.entity.User3">
+        <id property="id" column="id"/>
+        <result property="instname" column="instname"/>
+        <result property="instpassword" column="instpassword"/>
+        <result property="instcertify" column="instcertify"/>
+        <result property="instemail" column="instemail"/>
+        <result property="instphone" column="instphone"/>
+        <result property="insthistorytime" column="insthistorytime"/>
+        <result property="instaddress" column="instaddress"/>
+        <result property="instculture" column="instculture"/>
+        <result property="instavatar" column="instavatar"/>
+        <result property="instrole" column="instrole"/>
+    </resultMap>
+
+</mapper>

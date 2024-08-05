@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!--动态SQL-->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo12.mapper.UserMapper">
+    <resultMap id="UserMap" type="com.example.demo12.entity.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="nickname" column="nickname"/>
+        <result property="opassword" column="opassword"/>
+        <result property="age" column="age"/>
+        <result property="ability" column="ability"/>
+        <result property="phone" column="phone"/>
+        <result property="oaddress" column="oaddress"/>
+        <result property="avatar" column="avatar"/>
+        <result property="agerole" column="agerole"/>
+        <result property="credit" column="credit"/>
+    </resultMap>
+    <!--<update id="update">
+        update the_aged
+        <set>
+            <if test="name !=null">
+                name =#{name},
+            </if>
+            &lt;!&ndash;<if test="o_password !=null">
+                o_password = #{o_password},
+            </if>&ndash;&gt;
+            /*一般情况下o_password是不允许在SQL中修改的，太危险了，要有单独的地方修改的*/
+            <if test="age !=0">
+                age = ${age},
+            </if>
+            <if test="ability !=null">
+                ability = #{ability},
+            </if>
+            <if test="phone !=null">
+                phone = #{phone},
+            </if>
+            <if test="o_address !=null">
+                o_address = #{o_address},
+            </if>
+        </set>
+        <where>
+            id = #{id}
+        </where>
+    </update>-->
+
+</mapper>

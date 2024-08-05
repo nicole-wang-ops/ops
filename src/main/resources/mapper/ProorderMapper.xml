@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!--动态SQL-->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo12.mapper.ProorderMapper">
+    <resultMap id="ProorderMap" type="com.example.demo12.entity.Proorder">
+        <id property="id" column="id"/>
+        <result property="pid" column="pid"/>
+        <result property="buyId" column="buy_id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="businessRate" column="business_rate"/>
+        <result property="businessContent" column="business_content"/>
+
+    </resultMap>
+
+    <update id="updateByPid"  parameterType="com.example.demo12.entity.Proorder" >
+        update proorder set business_rate= #{businessRate}, business_content = #{businessContent}  where pid = #{pid} and buy_id = #{buyId}
+    </update>
+
+</mapper>

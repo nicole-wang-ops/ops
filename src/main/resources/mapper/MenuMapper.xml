@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!--动态SQL-->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo12.mapper.MenuMapper">
+    <resultMap id="MenuMap" type="com.example.demo12.entity.Menu">
+        <id property="id" column="id"/>
+        <result property="menuname" column="menuname"/>
+        <result property="menupath" column="menupath"/>
+        <result property="menuicon" column="menuicon"/>
+        <result property="menudescription" column="menudescription"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><!--动态SQL-->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo12.mapper.AdMapper">
+    <resultMap id="AdMap" type="com.example.demo12.entity.Ad">
+        <id property="id" column="id"/>
+        <result property="adname" column="adname"/>
+        <result property="adnickname" column="adnickname"/>
+        <result property="adpassword" column="adpassword"/>
+        <result property="ademail" column="ademail"/>
+        <result property="adphone" column="adphone"/>
+        <result property="adavatar" column="adavatar"/>
+        <result property="adrole" column="adrole"/>
+        <result property="credit" column="credit"/>
+
+        <result property="content" column="content"/>
+        <result property="age" column="age"/>
+        <result property="ability" column="ability"/>
+
+        <result property="oaddress" column="oaddress"/>
+        <result property="instname" column="instname"/>
+        <result property="nurcredential" column="nurcredential"/>
+        <result property="nurworkingyears" column="nurworkingyears"/>
+        <result property="instcertify" column="instcertify"/>
+        <result property="insthistorytime" column="insthistorytime"/>
+        <result property="instculture" column="instculture"/>
+    </resultMap>
+</mapper>

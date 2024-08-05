@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><!--动态SQL-->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.demo12.mapper.RoleMapper">
+    <resultMap id="RoleMap" type="com.example.demo12.entity.Role">
+        <id property="id" column="id"/>
+        <result property="rolename" column="rolename"/>
+        <result property="roledescription" column="roledescription"/>
+        <result property="roleflag" column="roleflag"/>
+    </resultMap>
+
+</mapper>
